@@ -1,0 +1,28 @@
+header, footer{
+    background-color: dimgrey;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+h1{
+    color: black;
+    text-align: center;
+}
+
+h2{
+    border-bottom: 1px solid black;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 30px gray;
+}
+
+section{
+    margin: 20px 0;
+    border: 1px solid dimgrey;
+    padding: 10px;
+    background-color: gray;
+}
