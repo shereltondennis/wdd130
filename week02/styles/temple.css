@@ -25,4 +25,13 @@ section{
     border: 1px solid dimgrey;
     padding: 10px;
     background-color: gray;
+    font-size: .9rem;
+}
+
+section p{
+    font-size: 10px;
+}
+
+footer{
+    font-size: .9rem;
 }
