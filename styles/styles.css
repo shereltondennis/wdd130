@@ -1,5 +1,5 @@
 main{
-    width: 840px;
+    min-width: 840px;
 }
 
 main img{
@@ -17,6 +17,21 @@ header{
     text-align: justify;
 }
 
+h1{
+    color: #000;
+}
+
+nav{
+    background-color: #333;
+    padding: 10px;
+}
+
+nav a{
+    color: #f5f3f3;
+    padding: auto;
+    display: block;
+    font-weight: bold;
+}
 aside{
     width: 20em;
     margin: 1em;
