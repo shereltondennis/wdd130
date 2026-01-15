@@ -28,7 +28,7 @@ nav{
 
 nav a{
     color: #f5f3f3;
-    padding: auto;
+    padding: 10px;
     display: block;
     font-weight: bold;
 }
