@@ -1,5 +1,5 @@
 main{
-    min-width: 840px;
+    max-width: 840px;
     margin: 0 auto;
     padding: 10px;
     font-family: Arial, sans-serif;
@@ -27,6 +27,7 @@ h1{
 
 nav{
     padding: 10px;
+    background-color: #4f74a1;
 }
 
 nav a{
