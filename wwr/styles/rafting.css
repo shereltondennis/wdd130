@@ -29,7 +29,7 @@ header a {
 }
 
 h2, h3 {
-    font-family: black;
+    font-family: var(--heading-font);
     color: var(--primary-color);
     width: 100%;
     margin-left: 0% ;
