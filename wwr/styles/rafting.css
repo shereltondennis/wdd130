@@ -51,6 +51,10 @@ nav, p, section, article {
     padding: 5px;
 }
 
+.socialmedia a{
+    text-decoration: none;
+}
+
 .hero {
     position: relative;
 }
@@ -89,4 +93,7 @@ h1{
 
 footer {
     border-top: 1px solid #0a0a0a;
+}
+footer a {
+    text-decoration: none;
 }
