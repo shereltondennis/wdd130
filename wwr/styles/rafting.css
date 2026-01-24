@@ -1,10 +1,10 @@
 :root{
     --primary-color: #eeefef;
-    --secondary-color: #FFD700;
+    --secondary-color: white;
     --accent1-color: #0b0b0a;
     --accent2-color: #4682B4;
     --heading-font: 'Times New Roman', Georgia, serif;
-    --body-font: 'Arrial', Helvetica, sans-serif;
+    --body-font: 'Arial', Helvetica, sans-serif;
 }
 
 *{
@@ -21,6 +21,10 @@ body {
 header, main, footer {
     width: 840px;
     margin: 0 auto;
+}
+header {
+    
+    background-color: white;
 }
 
 header a {
