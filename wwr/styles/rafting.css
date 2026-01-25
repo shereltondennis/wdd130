@@ -2,7 +2,7 @@
     --primary-color: #eeefef;
     --secondary-color: white;
     --accent1-color: #0b0b0a;
-    --accent2-color: #4682B4;
+    --accent2-color: black;
     --heading-font: 'Times New Roman', Georgia, serif;
     --body-font: 'Arial', Helvetica, sans-serif;
 }
@@ -75,7 +75,7 @@ h1{
     width: 100%;
     padding: 12px;
     text-align: center;
-    background-color: #45b8eea8;
+    background-color: rgba(0, 0, 0, 0.74);
     color: #fff;
 }
 
