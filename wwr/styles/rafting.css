@@ -24,12 +24,16 @@ header, main, footer {
 }
 header {
     
-    background-color: white;
+    background-color: rgb(84, 55, 55);
 }
 
 header a {
     display: block;
 
+}
+
+nav img {
+    border-radius: 50px;
 }
 
 h2, h3 {
