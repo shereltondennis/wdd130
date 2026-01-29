@@ -29,14 +29,14 @@ main img{
 
 main{
     margin: 1rem;
-    grid-column: 2/4;
+    grid-column: 2/3;
 }
 
 aside{
 
     width: 20rem;
     position: relative;
-    /* grid-column: 1; */
+    grid-column: 1;
     grid-row: 1/2;
 }
 
@@ -73,10 +73,12 @@ nav a{
     font-weight: bold;
 }
 aside{
-    width: 20em;
+    width: 20rem;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
     margin: 1em;
     border: 1px solid black;
-    padding: 1em;
     background-color: #eee;
     color: #333;
     text-align: center;
