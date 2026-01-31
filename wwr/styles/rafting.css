@@ -28,7 +28,7 @@ header {
 }
 
 header a {
-    display: block;
+    display: flex;
 
 }
 
