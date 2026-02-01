@@ -85,12 +85,12 @@ nav {
 .history-img-box img { width: 100%; max-width: 150px; }
 
 /* Adventure Gallery */
-.gallery {
+/* .gallery {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 10px;
     margin-bottom: 40px;
-}
+} */
 
 .gallery figure {
     background: #eee;
@@ -186,12 +186,12 @@ section h2 {
     margin-bottom: 20px;
 }
 
-.history-grid {
+/* .history-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
     align-items: center;
-}
+} */
 
 .gallery {
     display: grid;
