@@ -30,7 +30,41 @@
 <p>Tele: (231) 776-109-240</p>
 <p>Email: <a href="sherelton:shereltondennis@.com">sherelton</a></p>
 <div class="map">
-    <iframe src="https://maps.app.goo.gl/9zZsoqdhgzozq7AV6" frameborder="0"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14354.491884466328!2d-10.717356203239865!3d6.321707400123112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2s!4v1770360387505!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <form action="/submit-form" method="POST">
+  <div class="form-group" style="margin-bottom: 15px;">
+    <label for="name">Full Name:</label><br>
+    <input type="text" id="name" name="user_name" required style="width: 100%; max-width: 300px;">
+  </div>
+
+  <div class="form-group" style="margin-bottom: 15px;">
+    <label for="email">Email Address:</label><br>
+    <input type="email" id="email" name="user_email" required style="width: 100%; max-width: 300px;">
+  </div>
+
+  <div class="form-group" style="margin-bottom: 15px;">
+    <label for="purpose">Purpose of Message:</label><br>
+    <select id="purpose" name="purpose" required style="width: 100%; max-width: 310px; padding: 5px;">
+      <option value="" disabled selected>Select an option...</option>
+      <option value="general">General Inquiry</option>
+      <option value="reservation">Reservation Question</option>
+      <option value="suggestion">Website Suggestion</option>
+    </select>
+  </div>
+
+  <div class="form-group" style="margin-bottom: 15px;">
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="5" style="width: 100%; max-width: 400px;" required></textarea>
+  </div>
+
+  <div class="form-group" style="margin-bottom: 15px;">
+    <input type="checkbox" id="newsletter" name="subscribe" value="yes">
+    <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+  </div>
+
+  <button type="submit">Submit</button>
+</form>
 
 </div>
 </main>
