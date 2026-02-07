@@ -91,7 +91,6 @@ nav {
 /* 6. MAIN SECTIONS */
 section {
     padding: 40px 20px;
-    background-color: white;
     margin: 20px 0;
 }
 
@@ -173,3 +172,69 @@ button {
   font-size: 16px; 
   font-weight: bold;
 }
+/* Centers the text for the H1 and contact details */
+.contact-header {
+    text-align: center;
+    margin-bottom: 30px; /* Adds some breathing room before the map/form */
+}
+
+/* Optional: If you want the list of info to look cleaner, 
+   you can remove the default paragraph margins */
+.contact-header p {
+    margin: 5px 0;
+}
+
+/* Keep the grid layout for the map and form below */
+.contact-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers the map and form as a group */
+    gap: 40px;
+    padding: 20px;
+}
+
+/* Ensure the map stays on the left */
+.map {
+    flex: 1;         /* Takes up available space */
+    min-width: 300px; 
+}
+
+.map iframe {
+    width: 100%;    /* Makes the map responsive to its container */
+    max-width: 600px;
+    height: 450px;
+}
+
+/* Style for the form on the right */
+form {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Stack radio buttons vertically */
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+/* Ensure the labels for radio buttons are inline with the circles */
+.radio-group label {
+    display: flex;
+    align-items: center;
+    font-weight: normal; /* Match the lighter text in the image */
+    cursor: pointer;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 10px; /* Space between circle and text */
+}
+
+.map{
+    width: 600px;
+    height: 450px;
+    border: 0;
+}
+

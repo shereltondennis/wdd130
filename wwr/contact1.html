@@ -22,16 +22,20 @@
         </nav>
     </header>
 <main>
-<h1>Contact Us</h1>
 
-<h2>Send Us a message</h2>
+    <section class="contact-header">
+        <p>White Water Rafting</p>
+        <p>Tele: (231) 776-109-240</p>
+        <p>Email: <a href="mailto:shereltondennis@example.com">shereltondennis@example.com</a></p>
+    </section>
 
-<p>White water rafting</p>
-<p>Tele: (231) 776-109-240</p>
-<p>Email: <a href="sherelton:shereltondennis@.com">sherelton</a></p>
-<div class="map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14354.491884466328!2d-10.717356203239865!3d6.321707400123112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2s!4v1770360387505!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="contact-grid">
+        </div>
 
+    <div class="contact-grid">
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?..."></iframe>
+        </div>
     <form action="/submit-form" method="POST">
   <div class="form-group" style="margin-bottom: 15px;">
     <label for="name">Full Name:</label><br>
@@ -44,14 +48,19 @@
   </div>
 
   <div class="form-group">
-    <label for="purpose">Purpose of Message:</label><br>
-    <select id="purpose" name="purpose" required style="width: 100%; max-width: 310px; padding: 5px;">
-      <option value="" disabled selected>Select an option...</option>
-      <option value="general">General Inquiry</option>
-      <option value="reservation">Reservation Question</option>
-      <option value="suggestion">Website Suggestion</option>
-    </select>
-  </div>
+    <label>Message Purpose:</label>
+    <div class="radio-group">
+        <label>
+            <input type="radio" name="purpose" value="general" checked> General Inquiry
+        </label>
+        <label>
+            <input type="radio" name="purpose" value="reservation"> Reservation Question
+        </label>
+        <label>
+            <input type="radio" name="purpose" value="suggestion"> Website Suggestion
+        </label>
+    </div>
+</div>
 
   <div class="form-group">
     <label for="message">Message:</label><br>
