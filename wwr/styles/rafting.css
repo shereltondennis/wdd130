@@ -91,6 +91,7 @@ nav {
 /* 6. MAIN SECTIONS */
 section {
     padding: 40px 20px;
+    background-color: white;
     margin: 20px 0;
 }
 
@@ -211,30 +212,101 @@ form {
     min-width: 300px;
 }
 
-/* Stack radio buttons vertically */
-.radio-group {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    margin-top: 5px;
-    margin-bottom: 15px;
+/* 1. Center the Header and Contact Info */
+.contact-header {
+    text-align: center;
+    margin: 40px 0;
 }
 
-/* Ensure the labels for radio buttons are inline with the circles */
-.radio-group label {
+.contact-header p {
+    margin: 5px 0;
+    font-size: 1.1rem;
+}
+
+/* 2. Layout for Map and Form (Side-by-Side) */
+.contact-grid {
     display: flex;
-    align-items: center;
-    font-weight: normal; /* Match the lighter text in the image */
+    justify-content: center; /* Centers the whole group */
+    align-items: flex-start; /* Aligns them at the top */
+    gap: 50px;               /* Space between map and form */
+    flex-wrap: wrap;         /* Allows stacking on mobile */
+    padding: 0 20px;
+}
+
+/* 3. Map Styling */
+.map {
+    flex: 1;
+    max-width: 600px;
+}
+
+.map iframe {
+    width: 100%;
+    border-radius: 8px; /* Optional: adds a slight curve to map corners */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* 4. Form Styling */
+form {
+    flex: 1;
+    max-width: 400px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-item {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Input & Textarea styling to match wireframe boxes */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+/* 5. Radio Button Styling (Vertical List) */
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+fieldset legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Makes radio labels sit next to the circle */
+fieldset label {
+    display: inline;
+    font-weight: normal;
+    margin-left: 10px;
+}
+
+/* 6. Submit Button (Gray and wide) */
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #e0e0e0;
+    color: #333;
+    border: 1px solid #767676;
+    font-weight: bold;
     cursor: pointer;
+
 }
 
-.radio-group input[type="radio"] {
-    margin-right: 10px; /* Space between circle and text */
+button[type="submit"]:hover {
+    background-color: #cccccc;
 }
-
-.map{
-    width: 600px;
-    height: 450px;
-    border: 0;
-}
-
