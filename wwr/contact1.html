@@ -22,34 +22,29 @@
         </nav>
     </header>
 <main>
-    <section class="contact-header">
+    <section class="contact-header" style="text-align: center;">
         <h1>White Water Rafting Company</h1>
-        <p>123 Main River Street</p>
-        <p>Kolob, California</p>
-        <p>+1 999 999 9999</p>
+        <p>123 Main River Street, Kolob, California</p>
+        <p>Tele: (231) 776-109-240</p>
         <p>Email: <a href="mailto:info@whitewater.com">info@whitewater.com</a></p>
     </section>
 
     <div class="contact-grid">
-        
         <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1000!2d0!3d0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v123456789" 
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-
-        <form action="/submit-form" method="POST">
+            <iframe src="https://www.google.com/maps/embed?..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div> <form action="/submit-form" method="POST">
             <div class="form-group">
-                <label for="name">Name</label>
+                <label for="name">Name:</label>
                 <input type="text" id="name" name="user_name" placeholder="Placeholder" required>
             </div>
 
             <div class="form-group">
-                <label for="email">Email</label>
+                <label for="email">Email:</label>
                 <input type="email" id="email" name="user_email" placeholder="Placeholder" required>
             </div>
 
             <div class="form-group">
-                <label>Message Purpose</label>
+                <label>Message Purpose:</label>
                 <div class="radio-group">
                     <label><input type="radio" name="purpose" value="general" checked> General Inquiry</label>
                     <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
@@ -58,21 +53,18 @@
             </div>
 
             <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="4"></textarea>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="5"></textarea>
             </div>
 
             <div class="form-group">
-                <label>
-                    <input type="checkbox" name="subscribe" value="yes" checked> 
-                    Please Subscribe me to the monthly newsletter
-                </label>
+                <input type="checkbox" id="newsletter" name="subscribe" value="yes">
+                <label for="newsletter">Please subscribe me to the monthly newsletter</label>
             </div>
 
             <button type="submit">Get in Touch!</button>
         </form>
-    </div>
-</main>
+    </div> </main>
 
     <footer>
         <p>&copy; 2026 Whitewater Adventures | Sherelton B Dennis</p>
