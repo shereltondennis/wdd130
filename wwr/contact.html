@@ -1,52 +1,90 @@
-
-
-    <main>
-        <form action="/submit-feedback" method="post">
-            
-            <!-- ✅ At least one <input type="text"> -->
-            <!-- ✅ Associated <label> -->
-            <!-- ✅ name and id attributes -->
-            <div>
-                <label for="fullName">Full Name:</label>
-                <input type="text" id="fullName" name="fullName" required>
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Discover the history of White Water Rafting Company.
+     Join us for thrilling river trips and expert-led expeditions. Book your adventure today!">
+    <meta name="author" content="Sherelton B Dennis">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | White Water Rafting</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="images/logo.jpg" alt="Logo" class="logo">
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="trips.html">Trips</a>
+                <a href="contact.html">Contact Us</a>
             </div>
+        </nav>
+    </header>
+<main>
+    <div class="hero">
+        <img src="images/hero.jpg" alt="White Water Rafting Background">
+        
+        <h1>White Water Rafting Company</h1>
+        
+        <article>
+            <p>Welcome to White Water Rafting Company! We are dedicated to providing 
+              thrilling and unforgettable rafting experiences on some of the most beautiful rivers 
+              in the world. Our mission is to take you deep into the heart of the wilderness, where the 
+              rush of the rapids meets the serenity of nature.
+              </p>
+            <img src="images/rafting000.jpg" alt="Rafting Action">
+        </article>
+    </div>
 
-            <!-- ✅ Exactly three <input type="radio"> buttons (same name) -->
-            <!-- ✅ Associated <label> -->
-            <!-- ✅ name and id attributes -->
-            <fieldset>
-                <legend>Rate your experience:</legend>
-                <input type="radio" id="rating1" name="experience" value="good" checked>
-                <label for="rating1">Good</label><br>
-                
-                <input type="radio" id="rating2" name="experience" value="average">
-                <label for="rating2">Average</label><br>
-                
-                <input type="radio" id="rating3" name="experience" value="poor">
-                <label for="rating3">Poor</label>
-            </fieldset>
-
-            <!-- ✅ One <textarea> -->
-            <!-- ✅ Associated <label> -->
-            <!-- ✅ name and id attributes -->
-            <div>
-                <label for="comments">Comments:</label>
-                <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+    <section>
+        <h2>History</h2>
+        <div class="history-grid">
+            <p>Founded in 1995, our company began with just two rafts and a passion for the outdoors. 
+              Today, we are proud to be the region's leading outfitter, dedicated to river 
+              conservation and safety.</p>
+            <div class="history-img-box">
+                <img src="images/rafting000.jpg" alt="Our History">
             </div>
+            <p>Experience the rush of the river with our expert-led rafting tours. From calm scenic 
+              floats to heart-pumping Class IV rapids, we offer an adventure for every skill level and age group.</p>
+        </div>
+    </section>
 
-            <!-- ✅ One <input type="checkbox"> -->
-            <!-- ✅ Associated <label> -->
-            <!-- ✅ name and id attributes -->
-            <div>
-                <input type="checkbox" id="subscribe" name="subscribe" value="yes">
-                <label for="subscribe">Subscribe to newsletter</label>
-            </div>
+    <section>
+        <h2>Adventure Awaits You!</h2>
+        <div class="gallery">
+            <figure>
+                <img src="images/rafting02.jpg" alt="Rapid">
+                <figcaption>Thrilling Rapids</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rafting03.jpg" alt="Scenery">
+                <figcaption>Beautiful Scenery</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rafting04.jpg" alt="Waters">
+                <figcaption>Peaceful Waters</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rafting05.jpg" alt="Family">
+                <figcaption>Family Fun</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rafting01.jpg" alt="Experience">
+                <figcaption>Experience</figcaption>
+            </figure>
+        </div>
+    </section>
+</main>
 
-            <!-- ✅ One <button type="submit"> with meaningful content -->
-            <button type="submit">Send Feedback</button>
-
-        </form>
-    </main>
-
+    <footer>
+        <p>&copy; 2026 Whitewater Adventures | Sherelton B Dennis</p>
+        <nav class="socialmedia">
+            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
+        </nav>
+    </footer>
 </body>
 </html>

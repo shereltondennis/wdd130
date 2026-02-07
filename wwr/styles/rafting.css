@@ -304,7 +304,7 @@ button[type="submit"] {
     border: 1px solid #767676;
     font-weight: bold;
     cursor: pointer;
-
+    transition: background 0.3s;
 }
 
 button[type="submit"]:hover {
