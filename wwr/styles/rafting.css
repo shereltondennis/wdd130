@@ -194,11 +194,6 @@ button {
     padding: 20px;
 }
 
-/* Ensure the map stays on the left */
-.map {
-    flex: 1;         /* Takes up available space */
-    min-width: 300px; 
-}
 
 .map iframe {
     width: 100%;    /* Makes the map responsive to its container */
@@ -206,22 +201,17 @@ button {
     height: 450px;
 }
 
-/* Style for the form on the right */
-form {
-    flex: 1;
-    min-width: 300px;
-}
 
-/* 1. Center the Header and Contact Info */
+/* 1. Center the Header and Contact Info
 .contact-header {
     text-align: center;
     margin: 40px 0;
-}
+} */
 
-.contact-header p {
+/* .contact-header p {
     margin: 5px 0;
     font-size: 1.1rem;
-}
+} */
 
 /* 2. Layout for Map and Form (Side-by-Side) */
 .contact-grid {
@@ -237,12 +227,6 @@ form {
 .map {
     flex: 1;
     max-width: 600px;
-}
-
-.map iframe {
-    width: 100%;
-    border-radius: 8px; /* Optional: adds a slight curve to map corners */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 /* 4. Form Styling */
