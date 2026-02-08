@@ -185,15 +185,6 @@ button {
     margin: 5px 0;
 }
 
-/* Keep the grid layout for the map and form below */
-.contact-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Centers the map and form as a group */
-    gap: 40px;
-    padding: 20px;
-}
-
 
 .map iframe {
     width: 100%;    /* Makes the map responsive to its container */
