@@ -94,6 +94,10 @@ nav {
 section {
     padding: 40px 20px;
     margin: 20px 0;
+    background-color: rgb(241, 240, 240);
+    border: 2px solid #0c0101;
+    padding: 20px;
+    color: black;
 }
 
 h2 {
@@ -102,13 +106,7 @@ h2 {
     padding: 10px;
     margin-bottom: 20px;
 }
-
-section{
-    background-color: rgb(241, 240, 240);
-    border: 2px solid #0c0101;
-    padding: 20px;
-    color: black;
-}
+    
 
 .history-grid {
     display: grid;
