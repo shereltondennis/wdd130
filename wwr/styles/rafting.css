@@ -30,6 +30,7 @@ header, main, footer {
 header {
     background-color: var(--primary-purple);
     padding: 20px;
+    border: 1px solid black;
 }
 
 nav {
@@ -42,6 +43,7 @@ nav {
     text-decoration: none;
     color: black;
     padding: 10px 15px;
+    border: 1px solid black;
 }
 
 /* 5. HERO SECTION (Required Positioning) */
@@ -91,16 +93,21 @@ nav {
 /* 6. MAIN SECTIONS */
 section {
     padding: 40px 20px;
-    /* background-color: white; */
     margin: 20px 0;
 }
 
 h2 {
     text-align: center;
-    background-color: var(--primary-purple);
     color: var(--dark-purple);
     padding: 10px;
     margin-bottom: 20px;
+}
+
+section{
+    background-color: rgb(241, 240, 240);
+    border: 2px solid #0c0101;
+    padding: 20px;
+    color: black;
 }
 
 .history-grid {
@@ -119,6 +126,7 @@ h2 {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 15px;
+
 }
 
 figure {
@@ -139,7 +147,7 @@ footer {
     align-items: center;
     padding: 20px;
     background-color: var(--primary-purple);
-    border-top: 1px solid black;
+    border: 2px solid black;
 }
 
 footer p {
@@ -164,7 +172,7 @@ footer p {
 }
 
 button {
-  background-color: #55d874;
+  background-color: #7de796;
   color: white; 
   padding: 10px 25px; 
   border: none; 
@@ -262,7 +270,7 @@ fieldset label {
 button[type="submit"] {
     width: 100%;
     padding: 12px;
-    background-color: #069b3c;
+    background-color: #5ed088;
     color: #333;
     border: 1px solid #767676;
     font-weight: bold;
