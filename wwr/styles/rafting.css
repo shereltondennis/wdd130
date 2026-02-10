@@ -91,22 +91,22 @@ nav {
 }
 
 /* 6. MAIN SECTIONS */
-/* section {
-   
-} */
+section {
+    padding: 40px 20px;
+    margin: 20px 0;
+}
 
 h2 {
     text-align: center;
     color: var(--dark-purple);
     padding: 10px;
     margin-bottom: 20px;
-    padding: 40px 20px 10px;
-    margin: 20px 0;
 }
 
 section{
     background-color: rgb(241, 240, 240);
     border: 2px solid #0c0101;
+    padding: 20px;
     color: black;
 }
 
