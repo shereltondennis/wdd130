@@ -5,16 +5,16 @@
     <meta name="description" content="Discover the history of White Water Rafting Company.Join us for thrilling river trips and expert-led expeditions. Book your adventure today!">
     <meta name="author" content="Sherelton B Dennis">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | White Water Rafting</title>
+    <title>Home | White Water Rafting</title>
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
     <header>
         <nav>
             
-            <img src="images/logo1 (2).png" alt="Logo">
+            <img src="images/logo.png" alt="Logo">
             <div class="nav-links">
-                <a href="index.html">Home</a>
+                <a href="index.html" aria-current="page">Home</a>
                 <a href="about.html">About Us</a>
                 <a href="trips.html">Trips</a>
                 <a href="contact.html">Contact Us</a>
@@ -23,7 +23,7 @@
     </header>
 <main>
   <section class="hero">
-    <img src="images/hero1 (2).jpg" alt="Rafting team navigating rapids" class="hero-img">
+    <img src="images/hero-home.jpg" alt="Rafting team navigating rapids" class="hero-img">
     <div class="hero-content">
       <h1>Have An Adventure</h1>
       <p>Make Memories with Dry Oar</p>
@@ -31,25 +31,47 @@
     </div>
   </section>
 
+  <section class="newsletter">
+    <h2>Join Our Newsletter</h2>
+    <p>Get trip updates, seasonal offers, and rafting tips delivered to your inbox.</p>
+    <form class="newsletter-form" action="#" method="post">
+      <label for="newsletter-name">Name</label>
+      <input id="newsletter-name" name="newsletter-name" type="text" required>
+      <label for="newsletter-email">Email</label>
+      <input id="newsletter-email" name="newsletter-email" type="email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <section class="home-grid">
+    <article class="home-card">
+      <img src="images/rafting04.jpg" alt="Guide leading rafters through a canyon">
+      <h2>Our Purpose</h2>
+      <p>We create safe, memorable rafting adventures that connect people with rivers and the outdoors.</p>
+    </article>
+    <article class="home-card">
+      <img src="images/rafting05.jpg" alt="Rafting team preparing for a river trip">
+      <h2>What We Offer</h2>
+      <p>Choose beginner, family, and advanced river trips with experienced guides, training, and quality gear.</p>
+    </article>
+  </section>
+
   <section class="categories">
     <article class="category-item">
       <img src="images/rafting01.jpg" alt="Scenic river view">
       <div class="category-icon">
-        <img src="images/river-icon.png" alt="">
         <h3>Rivers</h3>
       </div>
     </article>
     <article class="category-item">
       <img src="images/rafting02.jpg" alt="Tent in the mountains">
       <div class="category-icon">
-        <img src="images/camping-icon.png" alt="">
         <h3>Camping</h3>
       </div>
     </article>
     <article class="category-item">
       <img src="images/rafting03.jpg" alt="Raft in white water">
       <div class="category-icon">
-        <img src="images/rapids-icon.png" alt="">
         <h3>Rapids</h3>
       </div>
     </article>

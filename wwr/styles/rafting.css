@@ -2,6 +2,8 @@
 :root {
   --primary-tan: #d9c5a3;
   --dark-green: #6b7364;
+  --dark-purple: #2f2a3b;
+  --grey-bg: #f2f2f2;
   --white: #ffffff;
   --font-main: 'Arial', sans-serif;
 }
@@ -14,7 +16,7 @@
 }
 
 body {
-    font-family: var(--body-font);
+    font-family: var(--font-main);
     color: black;
     line-height: 1.6;
 }
@@ -44,10 +46,24 @@ nav {
 
 .nav-links a {
     text-decoration: none;
-    color: black;
+    color: var(--white);
     padding: 10px 15px;
     
     /* border: 1px solid black; */
+}
+
+.nav-links a[aria-current="page"] {
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #1d4ed8;
+    outline-offset: 2px;
 }
 
 nav img{
@@ -69,7 +85,7 @@ nav img{
     display: block;
 }
 
-.hero h1, p {
+.hero h1, .hero p {
     position: relative; /* REQUIRED */
     top: 20px;
     left: 50%;
@@ -158,6 +174,7 @@ footer {
 footer p {
     grid-column: 2; /* Forces text to center column */
     text-align: center;
+    color: var(--white);
 }
 
 .socialmedia {
@@ -196,7 +213,6 @@ button {
    you can remove the default paragraph margins */
 .contact-header p {
     margin: 5px 0;
-    color: black;
 }
 
 
@@ -204,6 +220,13 @@ button {
     width: 100%;    /* Makes the map responsive to its container */
     max-width: 600px;
     height: 450px;
+}
+
+.map img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
 }
 
 /* 2. Layout for Map and Form (Side-by-Side) */
@@ -327,6 +350,79 @@ main {
   top: 20px;
 }
 
+/* Newsletter Section */
+.newsletter {
+  padding: 40px 10%;
+  margin: 40px 0;
+  background-color: #f3ecdf;
+  text-align: center;
+}
+
+.newsletter h2 {
+  margin-bottom: 8px;
+  color: #2f3a2b;
+}
+
+.newsletter p {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.newsletter-form {
+  max-width: 700px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 16px;
+  text-align: left;
+}
+
+.newsletter-form label {
+  margin-bottom: 0;
+}
+
+.newsletter-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #b6b6b6;
+  border-radius: 4px;
+}
+
+.newsletter-form button {
+  grid-column: 1 / -1;
+  width: fit-content;
+  justify-self: center;
+  margin-top: 6px;
+}
+
+/* Required Home Content */
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  padding: 20px 10% 40px;
+}
+
+.home-card {
+  background-color: #f6f6f6;
+  border: 1px solid #d8d8d8;
+  padding: 16px;
+}
+
+.home-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.home-card h2 {
+  margin-bottom: 8px;
+}
+
+.home-card p {
+  color: #333;
+}
+
 /* Categories Section */
 .categories {
   display: grid;
@@ -340,6 +436,39 @@ main {
   width: 90%;
   border: 8px solid var(--primary-tan);
   box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Trips Table */
+.trips-table {
+  padding: 20px 10% 40px;
+  margin: 0;
+}
+
+.trips-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--white);
+}
+
+.trips-table caption {
+  caption-side: top;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.trips-table th,
+.trips-table td {
+  border: 1px solid #c9c9c9;
+  padding: 10px;
+  text-align: left;
+}
+
+.trips-table thead th {
+  background-color: #e8e1d3;
+}
+
+.trips-table tbody tr:nth-child(even) {
+  background-color: #f7f7f7;
 }
 
 /* Feature Section */
@@ -383,6 +512,12 @@ main {
 
 /* Responsive adjustment for small screens */
 @media (max-width: 768px) {
+  .newsletter-form {
+    grid-template-columns: 1fr;
+  }
+  .home-grid {
+    grid-template-columns: 1fr;
+  }
   .feature-container {
     flex-direction: column;
   }

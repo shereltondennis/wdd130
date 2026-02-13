@@ -2,7 +2,7 @@
 <html lang="en-US">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Discover the history of White Water Rafting Company.Join us for thrilling river trips and expert-led expeditions. Book your adventure today!">
+    <meta name="description" content="Contact White Water Rafting to ask questions and plan your next river adventure.">
     <meta name="author" content="Sherelton B Dennis">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | White Water Rafting</title>
@@ -11,88 +11,46 @@
 <body>
     <header>
         <nav>
-            
             <img src="images/logo.png" alt="Logo">
             <div class="nav-links">
                 <a href="index.html">Home</a>
                 <a href="about.html">About Us</a>
                 <a href="trips.html">Trips</a>
-                <a href="contact.html">Contact Us</a>
+                <a href="contact.html" aria-current="page">Contact Us</a>
             </div>
         </nav>
     </header>
-<main>
-    <section class="contact-header">
-        <h1>White Water Rafting Company</h1>
-        <p>123 Main River Street, Kolob, California</p>
-        <p>Tele: (231) 776-109-240</p>
-        <p>Email: <a href="mailto:info@whitewater.com">info@whitewater.com</a></p>
-    </section>
+    <main>
+        <section class="contact-header">
+            <h1>Contact Us</h1>
+            <p>Phone: (555) 123-4567</p>
+            <p>Email: info@whitewateradventures.com</p>
+            <p>Address: 123 River Run Road, Rapids Valley, ID</p>
+        </section>
 
-    <div class="contact-grid">
-        <div class="map">
-            <iframe src="https://www.google.com/maps/embed?..." allowfullscreen="" loading="lazy"></iframe>
-        </div> <form action="/submit-form" method="POST">
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="user_name" placeholder="Placeholder" required>
+        <section class="contact-grid">
+            <div class="map">
+                <img src="images/rafting05.jpg" alt="Map placeholder for White Water Rafting location in Idaho">
+                <p>Location reference: Rapids Valley, Idaho</p>
             </div>
 
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="user_email" placeholder="Placeholder" required>
-            </div>
-
-            <div class="form-group">
-                <label>Message Purpose:</label>
-                <div class="radio-group">
-                    <label><input type="radio" name="purpose" value="general" checked> General Inquiry</label>
-                    <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
-                    <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+            <form action="#" method="post">
+                <div class="form-item">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
                 </div>
-            </div>
-
-            <div class="form-group">
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="5"></textarea>
-            </div>
-
-            <div class="form-group">
-                <input type="checkbox" id="newsletter" name="subscribe" value="yes">
-                <label for="newsletter">Please subscribe me to the monthly newsletter</label>
-            </div>
-
-            <button type="submit">Join the Mailing List!</button>
-        </form>
-    </div>
-    <section>
-        <h2>Adventure Awaits You!</h2>
-        <div class="gallery">
-            <figure>
-                <img src="images/rafting02.jpg" alt="Rapid">
-                <figcaption>Thrilling Rapids</figcaption>
-            </figure>
-            <figure>
-                <img src="images/rafting03.jpg" alt="Scenery">
-                <figcaption>Beautiful Scenery</figcaption>
-            </figure>
-            <figure>
-                <img src="images/rafting04.jpg" alt="Waters">
-                <figcaption>Peaceful Waters</figcaption>
-            </figure>
-            <figure>
-                <img src="images/rafting05.jpg" alt="Family">
-                <figcaption>Family Fun</figcaption>
-            </figure>
-            <figure>
-                <img src="images/rafting01.jpg" alt="Experience">
-                <figcaption>Experience</figcaption>
-            </figure>
-        </div>
-    </section>
-
-</main>
-
+                <div class="form-item">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-item">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
     <footer>
         <p>&copy; 2026 Whitewater Adventures | Sherelton B Dennis</p>
         <nav class="socialmedia">
