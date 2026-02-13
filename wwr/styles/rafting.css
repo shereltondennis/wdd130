@@ -27,9 +27,12 @@ header, main, footer {
 
 /* 4. HEADER & NAVIGATION */
 header {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
     background-color: #6b7364;
     padding: 20px;
-    /* border: 1px solid black; */
 }
 
 nav {
@@ -45,6 +48,11 @@ nav {
     /* border: 1px solid black; */
 }
 
+nav img{
+    border: 2px solid #6b7364;
+    border-radius: 30%;
+}
+
 /* 5. HERO SECTION (Required Positioning) */
 .hero {
     position: relative; /* REQUIRED */
@@ -52,20 +60,21 @@ nav {
 }
 
 .hero  img {
+    margin-top: 0%;
+    position: relative;
     width: 100%;
     height: auto;
     display: block;
 }
 
-.hero h1 {
-    position: absolute; /* REQUIRED */
+.hero h1, p {
+    position: relative; /* REQUIRED */
     top: 20px;
     left: 50%;
+    color: white;
     transform: translateX(-50%);
-    background-color: #d9c5a3;
-    color: var(--dark-purple);
     padding: 15px 30px;
-    width: auto;
+    width: 100%;
     text-align: center;
 }
 
@@ -307,11 +316,12 @@ main {
 
 .cta-button {
   background-color: var(--primary-tan);
-  color: #333;
+  color: #980303;
   padding: 10px 25px;
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
+  top: 20px;
 }
 
 /* Categories Section */
