@@ -9,57 +9,86 @@
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body class="home-page">
-    <header class="home-header">
-        <nav class="home-nav">
-            <img src="images/logo.png" alt="White Water Rafting company logo" class="home-logo">
+    <header>
+        <nav>
+            <img src="images/logo.png" alt="White Water Rafting company logo">
             <div class="nav-links">
                 <a href="index.html" aria-current="page">Home</a>
-                <a href="trips.html">Page 2</a>
-                <a href="about.html">Site Plan</a>
+                <a href="about.html">About Us</a>
+                <a href="trips.html">Trips</a>
                 <a href="contact.html">Contact Us</a>
             </div>
         </nav>
     </header>
-    <main>
-      <section class="home-hero">
-        <img src="images/hero-home.jpg" alt="Rafting team navigating rapids in a forest river" class="hero-img">
-        <div class="hero-content">
-          <h1>Have An Adventure</h1>
-          <p>Make Memories with Dry Oar</p>
-          <a href="trips.html" class="cta-button">Book Now</a>
-        </div>
-      </section>
+<main>
+  <section class="hero">
+    <img src="images/hero-home.jpg" alt="Rafting team navigating rapids" class="hero-img">
+    <div class="hero-content">
+      <h1>Have An Adventure</h1>
+      <p>Make Memories with Dry Oar</p>
+      <a href="trips.html" class="cta-button">Book Now</a>
+    </div>
+  </section>
 
-      <section class="home-categories">
-        <article class="category-item">
-          <img src="images/rafting01.jpg" alt="River flowing through a forest canyon">
-          <div class="category-icon">Rivers</div>
-        </article>
-        <article class="category-item">
-          <img src="images/rafting02.jpg" alt="Camping tent set near mountain scenery">
-          <div class="category-icon">Camping</div>
-        </article>
-        <article class="category-item">
-          <img src="images/rafting03.jpg" alt="Raft team paddling through rapids">
-          <div class="category-icon">Rapids</div>
-        </article>
-      </section>
+  <section class="newsletter">
+    <h2>Join Our Newsletter</h2>
+    <p>Get trip updates, seasonal offers, and rafting tips delivered to your inbox.</p>
+    <form class="newsletter-form" action="#" method="post">
+      <label for="newsletter-name">Name</label>
+      <input id="newsletter-name" name="newsletter-name" type="text" required>
+      <label for="newsletter-email">Email</label>
+      <input id="newsletter-email" name="newsletter-email" type="email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
 
-      <section class="home-feature">
-        <div class="feature-container">
-          <img src="images/rafting05.jpg" alt="Wide mountain valley with mist and sunlight" class="feature-img">
-          <div class="feature-box">
-            <h2>More Than Just The Thrill</h2>
-            <p>Enjoy the breathtaking scenery. From valleys, meadows, canyons, and high peaks; it's way more than just the rapids. It's a great way to get away from it all and relax amongst all the beauty of the great outdoors.</p>
-            <a href="about.html" class="cta-secondary">Join Us</a>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="home-footer">
-        <p>Dry Oar &copy; 20XX - Your First and Last Name Here</p>
-        <a href="about.html">Site Plan</a>
-        <a href="contact.html">Contact Us</a>
+  <section class="home-grid">
+    <article class="home-card">
+      <img src="images/rafting04.jpg" alt="Guide leading rafters through a canyon">
+      <h2>Our Purpose</h2>
+      <p>We create safe, memorable rafting adventures that connect people with rivers and the outdoors.</p>
+    </article>
+    <article class="home-card">
+      <img src="images/rafting05.jpg" alt="Rafting team preparing for a river trip">
+      <h2>What We Offer</h2>
+      <p>Choose beginner, family, and advanced river trips with experienced guides, training, and quality gear.</p>
+    </article>
+  </section>
+
+  <section class="categories">
+    <article class="category-item">
+      <img src="images/rafting01.jpg" alt="Scenic river view">
+      <div class="category-icon">
+        <h3>Rivers</h3>
+      </div>
+    </article>
+    <article class="category-item">
+      <img src="images/rafting02.jpg" alt="Tent in the mountains">
+      <div class="category-icon">
+        <h3>Camping</h3>
+      </div>
+    </article>
+    <article class="category-item">
+      <img src="images/rafting03.jpg" alt="Raft in white water">
+      <div class="category-icon">
+        <h3>Rapids</h3>
+      </div>
+    </article>
+  </section>
+
+  <section class="feature">
+    <div class="feature-container">
+      <img src="images/rafting05.jpg" alt="Misty mountain valley" class="feature-img">
+      <div class="feature-box">
+        <h2>More Than Just The Thrill</h2>
+        <p>Enjoy the breathtaking scenery. From valleys, meadows, canyons, and high peaks; it's way more than just the rapids. It's a great way to get away from it all and relax amongst all the beauty of the great outdoors.</p>
+        <a href="about.html" class="cta-secondary">Join Us</a>
+      </div>
+    </div>
+  </section>
+</main>
+    <footer>
+        <p>&copy; 2026 Whitewater Adventures | Sherelton B Dennis</p>
         <nav class="socialmedia">
             <a href="#"><img src="images/facebook.png" alt="Facebook social media icon"></a>
             <a href="#"><img src="images/instagram.png" alt="Instagram social media icon"></a>
