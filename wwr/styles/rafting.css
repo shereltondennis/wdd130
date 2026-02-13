@@ -195,7 +195,8 @@ button {
 /* Optional: If you want the list of info to look cleaner, 
    you can remove the default paragraph margins */
 .contact-header p {
-    margin: 5px 0;
+    color: black;
+    margin: 0;
 }
 
 
