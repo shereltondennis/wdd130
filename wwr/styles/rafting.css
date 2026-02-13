@@ -75,6 +75,8 @@ nav img{
 .hero {
     position: relative; /* REQUIRED */
     width: 100%;
+    text-align: center;
+    color: var(--white);
 }
 
 .hero  img {
@@ -96,26 +98,6 @@ nav img{
     text-align: center;
 }
 
-.hero article {
-    position: absolute; /* REQUIRED */
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%;
-    /* background-color: white; */
-    padding: 20px;
-    /* border: 1px solid black; */
-}
-
-
-.hero article img {
-    float: right; /* REQUIRED */
-    width: 120px;
-    height: auto;
-    margin-left: 20px;
-    box-shadow: 0 0 10px rgb(4, 0, 0);
-}
-
 /* 6. MAIN SECTIONS */
 section {
     padding: 40px 20px;
@@ -130,36 +112,6 @@ h2 {
     margin-bottom: 20px;
 }
     
-
-.history-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-    align-items: center;
-}
-
-.history-img-box {
-    padding: 15px;
-    box-shadow: 0 0 10px rgb(12, 0, 0);
-}
-
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 15px;
-
-}
-
-figure {
-    text-align: center;
-    background-color: var(--grey-bg);
-    padding: 10px;
-}
-
-figure img {
-    width: 100%;
-    height: auto;
-}
 
 /* 7. FOOTER (Centered Copyright) */
 footer {
@@ -215,12 +167,6 @@ button {
     margin: 5px 0;
 }
 
-
-.map iframe {
-    width: 100%;    /* Makes the map responsive to its container */
-    max-width: 600px;
-    height: 450px;
-}
 
 .map img {
     width: 100%;
@@ -317,13 +263,6 @@ button[type="submit"]:hover {
 main {
   font-family: var(--font-main);
   line-height: 1.6;
-}
-
-/* Hero Section */
-.hero {
-  position: relative;
-  text-align: center;
-  color: var(--white);
 }
 
 .hero-img {
