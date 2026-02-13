@@ -23,7 +23,6 @@ body {
     font-family: var(--font-main);
     color: var(--black);
     line-height: 1.6;
-    ;
 }
 
 /* 3. LAYOUT CONTAINERS */
@@ -38,7 +37,7 @@ header {
     top: 0;
     left: 0;
     z-index: 1;
-    background-color: #0f0f0ffb;
+    background-color: #6b7364;
     padding: 20px;
 }
 
@@ -55,6 +54,11 @@ nav {
     padding: 10px 15px;
     
     /* border: 1px solid black; */
+}
+
+.nav-links {
+    display: flex;
+    gap: 96px;
 }
 
 .nav-links a[aria-current="page"] {
@@ -98,7 +102,7 @@ nav img{
     position: relative; /* REQUIRED */
     top: 20px;
     left: 50%;
-    color: var(--white);
+    color: var(--black);
     transform: translateX(-50%);
     padding: 15px 30px;
     width: 100%;
@@ -284,6 +288,18 @@ main {
   left: 50%;
   transform: translate(-50%, -50%);
   text-shadow: 2px 2px 4px var(--shadow-50);
+}
+
+.hero-content h1 {
+  margin-top: 72px;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.hero-content p {
+  margin-top: 0;
+  margin-bottom: 36px;
+  padding: 0;
 }
 
 .cta-button {
@@ -481,6 +497,6 @@ main {
   transform: translateX(-50%);
   width: 100%;
   max-width: 1000px;
-  background-color: #6b736499;
+  background-color: #6b7364;
   z-index: 10;
 }
