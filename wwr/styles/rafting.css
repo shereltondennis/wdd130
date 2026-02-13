@@ -4,7 +4,11 @@
   --dark-green: #6b7364;
   --dark-purple: #2f2a3b;
   --grey-bg: #f2f2f2;
+  --black: #000000;
   --white: #ffffff;
+  --shadow-10: #0000001a;
+  --shadow-20: #00000033;
+  --shadow-50: #00000080;
   --font-main: 'Arial', sans-serif;
 }
 
@@ -17,7 +21,7 @@
 
 body {
     font-family: var(--font-main);
-    color: black;
+    color: var(--black);
     line-height: 1.6;
 }
 
@@ -91,7 +95,7 @@ nav img{
     position: relative; /* REQUIRED */
     top: 20px;
     left: 50%;
-    color: white;
+    color: var(--white);
     transform: translateX(-50%);
     padding: 15px 30px;
     width: 100%;
@@ -102,7 +106,7 @@ nav img{
 section {
     padding: 40px 20px;
     margin: 100px 0;
-    color: black;
+    color: var(--black);
 }
 
 h2 {
@@ -147,7 +151,7 @@ footer p {
 
 button {
   background-color: #7de796;
-  color: white; 
+  color: var(--white); 
   padding: 10px 25px; 
   border: none; 
   border-radius: 4px; 
@@ -276,7 +280,7 @@ main {
   top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  text-shadow: 2px 2px 4px var(--shadow-50);
 }
 
 .cta-button {
@@ -374,7 +378,7 @@ main {
 .category-item img {
   width: 90%;
   border: 8px solid var(--primary-tan);
-  box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+  box-shadow: 5px 5px 15px var(--shadow-10);
 }
 
 /* Trips Table */
@@ -427,7 +431,7 @@ main {
 
 .feature-img {
   width: 70%;
-  box-shadow: 10px 10px 20px rgba(0,0,0,0.2);
+  box-shadow: 10px 10px 20px var(--shadow-20);
 }
 
 .feature-box {
@@ -437,7 +441,7 @@ main {
   width: 45%;
   position: absolute;
   right: 0;
-  box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+  box-shadow: 5px 5px 10px var(--shadow-20);
 }
 
 .cta-secondary {
