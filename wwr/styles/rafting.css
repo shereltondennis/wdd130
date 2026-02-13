@@ -474,6 +474,12 @@ main {
 
 /* Responsive adjustment for small screens */
 @media (max-width: 768px) {
+  .nav-links {
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   .newsletter-form {
     grid-template-columns: 1fr;
   }
